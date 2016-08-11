@@ -7,12 +7,60 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    *:focus {
+        outline: none;
+    }
+    .header_top_line {
+        height: 70px;
+    }
+    .header_section p {
+        margin-top: 7px;
+        float: left;
+    }
+    .top_menu_button {
+        margin-top: 15px;
+    }
+    .top_menu ul {
+        background-color: #353f46;
+        position: absolute;
+        display: none;
+        left: 0px;
+        padding: 15px;
+        width: 100%;
+        z-index: 5;
+    }
+    .top_menu li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .animated {
+        /*CSS transitions*/
 
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -45,7 +93,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+    .top_menu ul {
+        display: block !important;
+    }
 }
 
  /* Large Devices, Wide Screens */

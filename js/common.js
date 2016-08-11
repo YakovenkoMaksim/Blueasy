@@ -13,8 +13,8 @@ $(document).ready(function() {
 	});
 
 	// Filter buttons
-	$(".nav_header_top").on("click", ".tab", function(){
-		$(".nav_header_top .tab").removeClass("active"); //удаляем класс во всех вкладках
+	$(".top_menu").on("click", ".tab", function(){
+		$(".top_menu .tab").removeClass("active"); //удаляем класс во всех вкладках
 		$(this).addClass("active"); //добавляем класс текущей (нажатой)
 	});
 
