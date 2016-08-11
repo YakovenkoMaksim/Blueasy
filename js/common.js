@@ -1,5 +1,23 @@
 $(document).ready(function() {
 
+	//Top menu
+	$(".top_menu_button").click(function() {
+		$(".top_menu ul").slideToggle();
+	});
+
+	$(".top_menu").find("a").click(function() {
+
+		if ($( window ).width() < 1024) {
+			$(".top_menu ul").slideToggle();
+		}
+	});
+
+	// Filter buttons
+	$(".nav_header_top").on("click", ".tab", function(){
+		$(".nav_header_top .tab").removeClass("active"); //удаляем класс во всех вкладках
+		$(this).addClass("active"); //добавляем класс текущей (нажатой)
+	});
+
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
