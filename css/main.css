@@ -55,14 +55,16 @@ a:focus {
     position: absolute;
     left: 0;
 }
-.header_section p {
+.logo {
     margin-top: 48px;
     font-size: 30px;
     text-transform: uppercase;
-    color: #ffffff;
     font-weight: bold;
 }
-.header_section span {
+.logo a {
+    color: #ffffff;
+}
+.logo span {
     color: #4bcaff;
 }
 .top_menu {
@@ -85,16 +87,16 @@ a:focus {
     margin-left: 10px;
     border: 2px solid transparent;
 }
-.top_menu a:hover {
+.top_menu li a:hover {
     border: 2px solid #4bcaff;
     color: #4bcaff;
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
-.active {
-    border: 2px solid #4bcaff !important;
-    color: #4bcaff!important;
+.top_menu li a:focus {
+    border: 2px solid #4bcaff;
+    color: #4bcaff;
 }
 .top_menu_button {
     background-color: transparent;
